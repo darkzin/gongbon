@@ -1,0 +1,85 @@
+#dashboard
+  section.profile.module
+    .info
+      = image_tag "avatar_me.png", html: { alt: "사용자 아바타" }
+      h1.nickname 나뚜루짱
+      h2.id darkzin
+    .reason
+      h1 공부하는 이유
+      h2 엄마가 하라니까
+  a href="#" 고민카드 작성
+  section.menu
+    ul.my
+      | MY
+      li: a[href="#"] 내가 작성한 고민카드
+      li: a[href="#"] 내가 답변한 고민카드
+    ul.all
+      | 모든 고민카드 보기
+      li: a[href="#"] 모든 고민카드 보기
+    ul.category
+      | 주제별
+      li: a[href="#"] 학습
+      li: a[href="#"] 진로
+      li: a[href="#"] 연애
+      li: a[href="#"] 입시
+      li: a[href="#"] 생활
+    ul.group
+      | 작성자별
+      li: a[href="#"] 중학생
+      li: a[href="#"] 고1
+      li: a[href="#"] 고2
+      li: a[href="#"] 고3
+      li: a[href="#"] N수
+      li: a[href="#"] 학부모
+#deck
+  .card
+    .notice
+      h1 [공지] 운영팀에서 드리는 필독 공지사항!
+  .card
+    .question
+      .header
+        .tag
+          span.category 연애
+          span.group N수
+        .info
+          span.created-at 2013-08-25
+          span.nickname 성수동꽃미남
+      .content
+        h1 재수생 연애해도 될까요...
+        p
+          |
+            형들 안녕하세요. 저는 대구사는 재수생입니다 ㅜㅜ.. 요즘 고민이 있어 이렇게 카드를 씁니다.
+            다름이 아니라 저희 학원에 새로 들어온...
+  .card
+    .question
+      .header
+        .tag
+          span.category 학습
+          span.group 고3
+        .info
+          span.created-at 2013-08-25
+          span.nickname 주걱턱마왕
+      .content
+        h1
+        p
+          |
+            안녕하세요. 수학때문에 고민이 너무 많은 고3입니다 ㅜㅜ 이제 거의 수눙이 다가오는데
+            아직도 3점짜리 문제에서 계산실수 하는 경우가 잦습니다... 이걸 어째야하나요?
+
+            수학 계산 실수 단기간에 잡는 방법이 있을까요? 답답하네요 ㅜㅜ
+    .answer
+      img.avatar[src="#" alt="권현석 멘토의 아바타"]
+      h1
+        span.name 권현석
+        | 멘토의 답장
+      p.content
+        |
+          님 망했어 큰일났어... 지금 그러면 어떡함?
+          그냥 구몬부터 다시 해야지 ㅋㅋㅋ
+          빠빠이야 그냥 ㅋㅋㅋㅋ
+    .reply
+      a[href="#"] 답장쓰기
+      p
+        | 안티 신승범님의 고민에 공감하신다면
+        a[href="#"] 공감하기
+        | 를 눌러주세요

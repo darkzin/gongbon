@@ -1,13 +1,13 @@
 #dashboard
   section.profile.module
+    = image_tag "avatar_me.png",  class: "avatar", alt: "사용자 아바타"
     .info
-      = image_tag "avatar_me.png", html: { alt: "사용자 아바타" }
       h1.nickname 나뚜루짱
       h2.id darkzin
     .reason
       h1 공부하는 이유
       h2 엄마가 하라니까
-  a href="#" 고민카드 작성
+  a#make_question href="#" 고민카드 작성
   section.menu
     ul.my
       | MY
@@ -38,12 +38,12 @@
   .card
     .question
       .header
-        .tag
-          span.category 연애
-          span.group N수
+        .tags
+          .tag.category.love 연애
+          .tag.group N수
         .info
-          span.created-at 2013-08-25
-          span.nickname 성수동꽃미남
+          .created-at 2013-08-25
+          .nickname 성수동꽃미남
       .content
         h1 재수생 연애해도 될까요...
         p
@@ -53,33 +53,44 @@
   .card
     .question
       .header
-        .tag
-          span.category 학습
-          span.group 고3
+        .tags
+          .tag.category.study 학습
+          .tag.group 고3
         .info
-          span.created-at 2013-08-25
-          span.nickname 주걱턱마왕
+          .created-at 2013-08-25
+          .nickname 주걱턱마왕
       .content
-        h1
+        h1 수학 계산실수가 너무 많습니다 ㅜㅜ
         p
           |
             안녕하세요. 수학때문에 고민이 너무 많은 고3입니다 ㅜㅜ 이제 거의 수눙이 다가오는데
             아직도 3점짜리 문제에서 계산실수 하는 경우가 잦습니다... 이걸 어째야하나요?
 
             수학 계산 실수 단기간에 잡는 방법이 있을까요? 답답하네요 ㅜㅜ
-    .answer
-      img.avatar[src="#" alt="권현석 멘토의 아바타"]
-      h1
-        span.name 권현석
-        | 멘토의 답장
-      p.content
-        |
-          님 망했어 큰일났어... 지금 그러면 어떡함?
-          그냥 구몬부터 다시 해야지 ㅋㅋㅋ
-          빠빠이야 그냥 ㅋㅋㅋㅋ
+    .answers
+      .answer
+        = image_tag "avatar_kwon.png", class: "avatar"
+        h1
+          span.name 권현석
+          | 멘토의 답장
+        p.content
+          |
+            님 망했어 큰일났어... 지금 그러면 어떡함?
+            그냥 구몬부터 다시 해야지 ㅋㅋㅋ
+            빠빠이야 그냥 ㅋㅋㅋㅋ
+      .answer
+        = image_tag("avatar_chang.png")
+        h1
+          span.name 김창환
+          | 멘토의 답장
+        p.content
+          |
+            누누누누누~!
+            요새는 녹턴~!
     .reply
-      a[href="#"] 답장쓰기
-      p
+      h1
+        a[href="#"] 답장쓰기
+      h2
         | 안티 신승범님의 고민에 공감하신다면
-        a[href="#"] 공감하기
+        a[href="#"]  공감하기
         | 를 눌러주세요

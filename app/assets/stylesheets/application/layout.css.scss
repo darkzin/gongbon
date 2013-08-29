@@ -11,41 +11,185 @@ body {}
 
 .container {
   width: 980px;
-    margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 header {
   background: rgb(44, 44, 44);
+  height: 40px;
+  border-bottom: 4px solid rgb(0, 0, 200);
   nav {
     float: right;
+    margin-top: 10px;
     a {
       display: inline-block;
       margin-left: 20px;
       color: white;
       font-weight: bold;
+      text-decoration: none;
     }
   }
 }
 
+#dashboard, #deck {
+  margin: 20px auto;
+}
+
 #dashboard {
   width: 30%;
-
+  float: left;
   .profile {
     width: 100%;
     background: rgb(248, 248, 248);
-    padding: 10px;
-    border: rgb(196, 196, 196);
-
-      .info {
-        text-align: left;
-        width: 50%;
-    img {
+    border: 2px solid rgb(196, 196, 196);
+    .avatar {
       float: left;
+      margin: 10px;
     }
+    .info {
+      text-align: left;
+      display: inline-block;
+      width: 150px;
+      padding: 30px 0;
+
+      img {
+        float: left;
+        height: 81px;
+      }
       h1, h2{
         margin: 0 20px;
-          text-align: right;
-          }
+        text-align: right;
       }
+
+      h1 {
+
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 15px;
+      }
+    }
+
+    .reason {
+      border-top: 2px solid rgb(196, 196, 196);
+      padding: 5px 10px;
+      h1 {
+        font-size: 13px;
+        color: rgb(0, 0, 230);
+      }
+      h2 {
+        font-size: 17px;
+      }
+    }
+  }
+
+  #make_question {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 255);
+  }
+  .menu {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+
+#deck {
+
+  width: 68%;
+  float: right;
+  margin-left: 10px;
+
+  .card {
+    border: 2px solid rgb(196, 196, 196);
+    background: rgb(248, 248, 248);
+    margin-bottom: 10px;
+    padding: 20px;
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 15px;
+    }
+    .question {
+      .header {
+        .tags {
+          display: inline-block;
+          font-size: 15px;
+          color: rgb(255, 255, 255);
+          width: 80%;
+          vertical-align: middle;
+          .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 10px;
+          }
+          .love {
+            background: rgb(200, 0, 0);
+          }
+          .study {
+            background: rgb(0, 200, 0);
+          }
+          .group {
+            background: rgb(196, 196, 196);
+          }
+        }
+
+
+        .info {
+          float: right;
+          display: inline-block;
+          text-align: center;
+          width: 15%;
+          padding: 0;
+          .created-at, .nickname {
+            font-size: 11px;
+          }
+        }
+      }
+
+      .content {
+        margin-top: 10px;
+      }
+    }
+
+    .answers {
+      margin-top: 20px;
+      .answer {
+        background: rgb(255, 255, 255);
+        border: 1px solid rgb(196, 196, 196);
+        margin: 0 -30px 10px auto;
+        min-height: 130px;
+        img {
+          float: left;
+          clear: left;
+          margin: 10px;
+        }
+
+        h1 {
+          margin: 10px;
+          span {
+            color: rgb(0, 0, 200);
+          }
+        }
+      }
+    }
+
+    .reply {
+      text-align: center;
+    }
   }
 }
